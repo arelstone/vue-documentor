@@ -1,13 +1,14 @@
 {
   "name": "vue-documentor",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "Living documentation for your components with build in routing",
   "main": "main.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ashleygwilliams/my_package.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Carsten Daurehøj <arelstone@gmail.com>",
+  "keywords": ["vue", "vuejs", "documentation", "vue router"],
   "dependencies": {
     "vue": "^2.5.13",
     "vue-router": "^3.0.1"
