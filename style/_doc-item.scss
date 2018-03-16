@@ -1,0 +1,25 @@
+@mixin padding() {
+  padding: 20px 40px;
+}
+
+@mixin border($color) {
+  border: 1px solid $color;
+}
+
+@import "variables";
+@import "props";
+.doc-item {
+  @include padding();
+  background: $link-color;
+  margin-bottom: 60px;
+  h2 a {
+    color: $primary-color;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+
+

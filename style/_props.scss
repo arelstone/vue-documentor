@@ -1,0 +1,31 @@
+/deep/ .props--row {
+  display: flex;
+  &.header {
+    font-size: 1.2em;
+    padding: 5px;
+    background: #bebebe;
+  }
+  &:not(.header) {
+    padding: 3px 0;
+    border-bottom: 1px solid #444444;
+  }
+}
+
+/deep/ .props--cell {
+  b {
+    margin: 0 5px;
+    color: darkorange;
+  }
+  &.name {
+    width: 15%;
+  }
+  &.type {
+    width: 15%
+  }
+  &.value {
+    width: 20%
+  }
+  &.description {
+    width: 50%;
+  }
+}
