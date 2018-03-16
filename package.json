@@ -5,7 +5,7 @@
   "main": "main.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ashleygwilliams/my_package.git"
+    "url": "https://github.com/arelstone/vue-documentor.git"
   },
   "author": "Carsten Daurehøj <arelstone@gmail.com>",
   "keywords": ["vue", "vuejs", "documentation", "vue router"],
