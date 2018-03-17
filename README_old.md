@@ -1,9 +1,8 @@
-![Vue documentor](./assets/logo.png)
-
-# Vue-documentor
-Vue documentor is a easy and simple to use vue-router addon to display documentation for your vue components.
+Vue-documentor is a addon for your vue-router that creates a living documentation for all of your vue.js components.
 
 It is quite simple. Just import the documentor route mapping function and pass your components
+
+This package is inspired by [https://github.com/propellant/doctor/](https://github.com/propellant/doctor/ "propellant/doctor").
 
 
 # Installation
@@ -105,9 +104,6 @@ You can easily create your own theme by copying the vue-documentor/style directo
 
 > cp node_modules/vue-documentor/style src/assets/vue-documentor-theme
 
-# Inspired by
-This package is inspired by [https://github.com/propellant/doctor/](https://github.com/propellant/doctor/ "propellant/doctor").
-
 # TODO:
-- [ ] Add options to mapDocumentorRoutes to be able to select the Uri and view component
-- [ ] Add testing utils to pull in for testing your own component
+- [] Add options to mapDocumentorRoutes to be able to select the Uri and view component
+- [] Add testing utils to pull in for testing your own component
