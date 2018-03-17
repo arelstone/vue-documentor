@@ -1,9 +1,15 @@
 ![Vue documentor](./assets/logo.png)
 
 # Vue-documentor
-Vue documentor is a easy and simple to use vue-router addon to display documentation for your vue components.
+As your project and codebase grows the number of components grows rapidly with it and you will properly have a hard time
+to remember what a component is used for and what props it'll take. 
+With this in mind i have created vue-documentor. 
 
-It is quite simple. Just import the documentor route mapping function and pass your components
+An easy to use and easy to extend package for displaying component documentation.
+
+Vue-documentor will scaffold routing and documentation for all of your components. 
+Vue-documentor is a addon for the vue router. Simply just pull in the package and add a method to your routing. Voila. 
+You got component documentation!
 
 
 # Installation
@@ -23,9 +29,9 @@ or
 1. Profit!
 
 
-You need to add three properties to your components. A `name`, an `introduction` and a `token` \(the html tag\).
+You need to add three properties to your components. A `name`, an `introduction` and a `token` (the html tag).
 
-All props on a component need to be defined as `Objects` with a type and a `note`.
+All props on a component need to be defined as `Objects` with a `type` and a `note`.
 
 In your router-file import `vue-documentor` and use the `mapDocumentorRoutes`-function.
 
@@ -52,12 +58,16 @@ export default {
 ```
 import {mapDocumentorRoutes} from 'vue-documentor' 
 import ComponentA from '@/components/ComponentA'
+import ComponentB from '@/components/ComponentB'
+import ComponentC from '@/components/ComponentC'
 
 new Router({
     // Define your own routes
     // {path: '/', name: 'Home', component: Home},
     ...mapDocumentorRoutes({
         ComponentA,
+        ComponentB,
+        ComponentC,
         // ...
     })
 })
@@ -83,7 +93,7 @@ export {
 
 You will then in your router file be able to get rid of all those imports
 
-You will now be able to import \* from the component-file
+You will now be able to import * from the component-file
 
 eg:
 
@@ -97,7 +107,7 @@ new Router({
 
 
 
-You will now be able to visit /#/documentor to see your vue-documentor
+You will now be able to visit `/#/documentor` to see your vue-documentor
 
 
 # Theming
