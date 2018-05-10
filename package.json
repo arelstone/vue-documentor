@@ -11,6 +11,9 @@
   "keywords": ["vue", "vuejs", "documentation", "vue router"],
   "dependencies": {
     "vue": "^2.5.13",
-    "vue-router": "^3.0.1"
+    "vue-router": "^3.0.1",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.0.1",
+    "style-loader": "^0.21.0"
   }
 }
