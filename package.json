@@ -1,6 +1,6 @@
 {
   "name": "vue-documentor",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Living documentation for your components with build in routing",
   "main": "main.js",
   "repository": {
