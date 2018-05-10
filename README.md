@@ -119,5 +119,7 @@ You can easily create your own theme by copying the vue-documentor/style directo
 This package is inspired by [https://github.com/propellant/doctor/](https://github.com/propellant/doctor/ "propellant/doctor").
 
 # TODO:
-- [ ] Add options to mapDocumentorRoutes to be able to select the Uri and view component
+- [x] Options: Add uri
+- [ ] Options: Add ability to use own component for rendering a collection of components
+- [ ] Options: Add ability to use own component for rendering a single doc item
 - [ ] Add testing utils to pull in for testing your own component

@@ -1,13 +1,15 @@
 <template>
     <div id="doc-view">
         <component-list :components="components"
-                        id="component-list"/>
+                        id="component-list"
+                        :uri="uri"/>
         <div id="component-view">
             <router-view v-if="$route.name !== 'documentor'"/>
             <doc-item v-else
                       v-for="component in components"
                       :key="component.name"
-                      :component="component"/>
+                      :component="component"
+                      :uri="uri"/>
         </div>
     </div>
 </template>
@@ -22,7 +24,8 @@
     description: '',
     token: '',
     props: {
-      components: {type: Array, required: true}
+      components: {type: Array, required: true},
+      uri: {type: String, required: true}
     },
     components: {DocItem, ComponentList}
   }

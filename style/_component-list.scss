@@ -2,7 +2,7 @@
 
 /deep/ #component-list {
   background: $primary-color;
-  border-right: 5px solid darken($primary-color, 10%);
+  border-right: 2px solid darken($primary-color, 10%);
   overflow: auto;
   ul {
     margin: 0;
@@ -11,6 +11,10 @@
       list-style: none;
       border-bottom: 1px solid darken($primary-color, 10%);
       padding: 10px 5px;
+
+      &.component--item {
+        padding-left: 20px;
+      }
     }
   }
 
@@ -21,10 +25,10 @@
     margin-left: 5px;
   }
   li:hover {
-    background: darken($primary-color, 10%);
+    background: darken($primary-color, 5%);
     a {
-      color: darken($link-color, 20%);
-      margin-left: 10px;
+      color: darken($link-color, 10%);
     }
   }
 }
+

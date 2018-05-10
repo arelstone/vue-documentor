@@ -2,23 +2,23 @@
     <div class="props">
         <div class="props--row header">
             <div class="props--cell name">Prop</div>
+            <div class="props--cell description">Description</div>
             <div class="props--cell type">Type</div>
             <div class="props--cell value">Default value</div>
-            <div class="props--cell description">Description</div>
         </div>
-        <div v-for="prop in getProps" class="props--row">
+        <div v-for="prop in getProps" class="props--row" :key="prop.key">
             <div class="props--cell name"><b v-if="prop.required">*</b>{{prop.key}}</div>
-            <div class="props--cell type">{{prop.type}}</div>
-            <div class="props--cell value">{{prop.default}}</div>
             <div class="props--cell description"><b v-if="prop.required">Required!</b><span v-else>Optional!</span>
                 {{prop.note}}
             </div>
+            <div class="props--cell type">{{prop.type}}</div>
+            <div class="props--cell value">{{prop.default}}</div>
+            
         </div>
     </div>
 </template>
 
 <script>
-
   export default {
     name: 'props',
     introduction: '',
